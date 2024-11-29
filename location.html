@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // if (location.protocol === 'http:') {
+            //     location.href = 'https://' + location.host;
+            // }
+        </script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="google-site-verification" content="mChDVh95TkpZC28YbUYjh5PhG-hkzRJvySf-i4hzg5c" />
+
+        <script src="https://kit.fontawesome.com/3624917c4f.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+        <meta name="title" content="부산명지룸바" />
+        <meta name="keywords" content="부산, 명지, 명지동, 명지국제, 룸, 바, 룸바, 부산명지룸, 명지룸, 부산룸, 더블유월드, W월드, 월드바, 더블유월드바, W월드바, 부산명지룸바, 명지룸바, 부산룸바, 부산명지바, 명지바, 부산바, room, bar, 명지동, 명지 룸, 부산명지 룸, 명지 바, 부산명지 바, 명지 룸바, 부산명지 룸바" />
+        <meta name="description" content="부산 명지 룸&바, 다양한 매력의 매니저들과 상위 10% 아가씨들이 여러분을 기다립니다!" />
+
+        <meta name="og:title" content="부산명지룸바" />
+        <meta name="og_type" content="website" />
+        <meta name="og:url" content="https://world-bar.com" />
+        <meta name="og:image" content="https://world-bar.com/images/image01.gif" />
+        <meta name="og:description" content="부산 명지 룸&바, 다양한 매력의 매니저들과 상위 10% 아가씨들이 여러분을 기다립니다!" />
+
+        <meta name="robots" content="index, follow" />
+
+        <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    
+        
+        <title>부산명지룸바</title>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                background-color: #333;
+                
+            }
+            
+            a {
+                text-decoration: none;
+                color: white;
+                transition: .2s;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #333;
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 3%;
+            }
+
+            .navbar__logo {
+                font-size: 24px;
+                color: violet;
+            }
+
+            .navbar__logo img{
+                width: 200px;
+                height: 70px;
+                margin-top: 5px;
+            }
+
+            .navbar__menu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                padding-left: 0;
+            }
+
+            .navbar__menu li {
+                width: 85px;
+                padding: 8px 12px;
+            }
+            
+            .navbar__links {
+                list-style: none;
+                padding-left: 0;
+                color: teal;
+                display: flex;
+            }
+
+            li a:hover{
+                /*color: #597812;*/
+                color: #FFD400;
+                font-size: 1.15em;
+                font-weight: normal;
+            }
+
+            .navbar__links li {
+                padding: 8px 12px;
+            }
+
+            .navbar__toggleBtn {
+                display: none;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                right: 0px;
+                top: 15px;
+                font-size: 24px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 8px 24px;
+                }
+                .navbar__menu {
+                    display: none;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+                .navbar__menu li {
+                    width: 100%;
+                    text-align: center;
+                }
+                .navbar__links {
+                    display: none;
+                    justify-content: center;
+                    width: 100%;
+                }
+                .navbar__toggleBtn {
+                    display: block;
+                }
+
+                .navbar__menu.active,
+                .navbar__links.active {
+                    display: flex;
+                    margin-top: 50px;
+                }
+            }
+
+            .middle-title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                height: 70px;
+                margin: 0 auto;
+                margin-top: 50px;
+                border-radius: 5px;
+                background-color: wheat;
+            }
+
+            .middle-title span{
+                font-weight: bold;
+                font-size: 1.4em;
+            }
+
+            .body-address{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                height: 180px;
+                margin: 0 auto;
+                color: white;
+                font-size: 1.5em;
+            }
+
+            .adress-wrapper{
+                text-align: center;
+            }           
+
+            .body-cotent{
+                width: 90%;
+                height: 600px;
+                margin: 0 auto;
+            
+                margin-bottom: 50px;
+            }
+
+            .body-cotent2{
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .body-cotent2 img{
+                width: 100%;
+            }
+
+            .body-cotent2 img:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="">
+                    <img src="./images/KakaoTalk_20241129_090149385_03.gif" alt="부산명지룸바"/>
+                </a>
+            </div>
+            <ul class="navbar__menu">
+                <li><a href="./index.html">명지룸싸롱</a></li>
+                <li><a href="./location.html" style="color: #FFD400">오시는길</a></li>
+                <li><a href="./contact.html">문의하기</a></li>
+            </ul>
+        
+            <a href="#" class="navbar__toggleBtn"><i class="fas fa-bars"></i></a>
+        </nav>
+        <div class="middle-title">
+            <span>오시는길</span>
+        </div>
+        <div class="body-address">
+            <div class="adress-wrapper">
+                <span>부산광역시 강서구 명지국제6로1번길 24, 2·3F</span><br/>
+                <span>(명지 오이아 호텔 2,3F)</span>
+            </div>
+        </div>
+        <div class="body-cotent">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.6342630710382!2d128.89985943631686!3d35.09370672029429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568db54b5a91e07%3A0xcb60698d49062e5a!2z67aA7IKw6rSR7Jet7IucIOqwleyEnOq1rCDrqoXsp4Dqta3soJw266GcMeuyiOq4uCAyNA!5e0!3m2!1sko!2skr!4v1732858077580!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="body-cotent2">
+            <img src="./images/KakaoTalk_20241129_090149385_02.gif" />
+        </div>
+    </body>
+    <script>
+
+        const toggleBtn = document.querySelector('.navbar__toggleBtn');
+        const menu = document.querySelector('.navbar__menu');
+        const links = document.querySelector('.navbar__links');
+
+        toggleBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            links.classList.toggle('active');
+        })
+    </script>
+</html>
